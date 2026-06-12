@@ -1,9 +1,20 @@
-<!-- feature/role-based-access branch -->
-
-
 # TaskFlow — Role-Based Task Manager
 
 A full-stack MERN application with role-based access control (Admin/User), activity tracking, and an admin dashboard.
+
+🔗 **Live Demo:** https://task-manager-pink-nu.vercel.app  
+🔧 **Backend API:** https://task-manager-2irq.onrender.com  
+📁 **GitHub:** https://github.com/SoumyaMadishetti17/Task-Manager  
+🔀 **Pull Request:** https://github.com/SoumyaMadishetti17/Task-Manager/pull/1
+
+---
+
+## Demo Accounts
+
+| Role  | Email           | Password  |
+|-------|-----------------|-----------|
+| Admin | admin@demo.com  | admin123  |
+| User  | user@demo.com   | user123   |
 
 ---
 
@@ -58,13 +69,13 @@ taskmanager/
 
 ---
 
-## Setup & Run
+## Setup & Run Locally
 
 ### 1. Clone & branch
 
 ```bash
-git clone <your-repo-url>
-cd taskmanager
+git clone https://github.com/SoumyaMadishetti17/Task-Manager.git
+cd Task-Manager
 git checkout -b feature/role-based-access
 ```
 
@@ -74,7 +85,7 @@ git checkout -b feature/role-based-access
 cd backend
 cp .env.example .env          # set MONGO_URI and JWT_SECRET
 npm install
-node seed.js                  # create demo accounts (optional)
+node seed.js                  # create demo accounts
 npm run dev                   # starts on http://localhost:5000
 ```
 
@@ -85,15 +96,6 @@ cd frontend
 npm install
 npm run dev                   # starts on http://localhost:3000
 ```
-
----
-
-## Demo Accounts
-
-| Role  | Email           | Password  |
-|-------|-----------------|-----------|
-| Admin | admin@demo.com  | admin123  |
-| User  | user@demo.com   | user123   |
 
 ---
 
@@ -131,13 +133,10 @@ npm run dev                   # starts on http://localhost:3000
 
 ---
 
-## Git Workflow
+## Deployment
 
-```bash
-# After completing work:
-git add .
-git commit -m "feat: role-based access, admin dashboard, activity logs"
-git push origin feature/role-based-access
-
-# Then raise a Pull Request on GitHub
-```
+| Service | Platform | URL |
+|---------|----------|-----|
+| Frontend | Vercel | https://task-manager-pink-nu.vercel.app |
+| Backend | Render | https://task-manager-2irq.onrender.com |
+| Database | MongoDB Atlas | Cloud hosted |
